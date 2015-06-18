@@ -8,7 +8,7 @@ append css
 
 block aside
     // Nav Menu
-    include ./inc/menu
+    +menu({'Главная' : '', 'О компании' : 'page-a.html', 'Новости' : 'page-b.html', 'Товары и услуги' : 'services', 'Контакты' : 'contacts'})
     // END Nav Menu
 
 block content
@@ -16,9 +16,4 @@ block content
     h1 Page B
     h3 Jade is awesome
     include inc/adv
-    #adv
-        ul
-            li Jade
-            li Is
-            li Awesome
     // Content -- end

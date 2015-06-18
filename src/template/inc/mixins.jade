@@ -1,0 +1,8 @@
+mixin menu(items)
+    ul.main-menu
+        - if(isFinite(items))
+            - for(var i = 1; i <= items; i++)
+                li: a(href='#menuitem'+i)='Пункт меню ' + i
+        - else
+        - for itemLink, itemName in items
+            li: a(href=itemLink)= itemName

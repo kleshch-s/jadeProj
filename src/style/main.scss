@@ -51,7 +51,6 @@ body{
   height: 60px;
   text-transform: uppercase;
 
-
   li{
     display: table-cell;
     margin: 5px;
@@ -62,6 +61,10 @@ body{
     border: 4px solid transparent;
     a{
       color: whitesmoke;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding-top: 18px;
     }
 
     &:hover {
@@ -76,23 +79,4 @@ body{
 
 article{
   padding: 15px;
-}
-
-#adv{
-  background: $primaryBrand;
-  ul{
-    display: table;
-    width: 100%;
-    li{
-      display: table-cell;
-      text-align: center;
-      font-weight: bold;
-      font-size: 2em;
-      color: $hoverMenuColor;
-      &:first-child, &:last-child{
-        width: 45%;
-      }
-
-    }
-  }
 }
