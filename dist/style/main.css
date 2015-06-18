@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700&subset=latin,cyrillic);
+* {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+body {
+  font-family: 'Exo 2', sans-serif; }
+
+#wrapper {
+  width: 500px;
+  border: 1px solid grey;
+  margin: 0 auto; }
+
+.main-menu {
+  background: grey; }
+  .main-menu li {
+    display: inline-block;
+    text-align: center; }
