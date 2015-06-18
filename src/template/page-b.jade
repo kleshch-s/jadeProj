@@ -3,6 +3,9 @@ extends inc/template
 block title
     title Page B
 
+append css
+    link(rel='stylesheet', href='style/main2.css')
+
 block aside
     // Nav Menu
     include ./inc/menu
@@ -13,4 +16,9 @@ block content
     h1 Page B
     h3 Jade is awesome
     include inc/adv
+    #adv
+        ul
+            li Jade
+            li Is
+            li Awesome
     // Content -- end

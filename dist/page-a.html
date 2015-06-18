@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page A</title>
     <link rel="stylesheet" href="style/main.css">
   </head>
@@ -10,15 +11,11 @@
       <aside>
         <!-- Nav Menu-->
         <ul class="main-menu">
-          <li>Menu Item 1</li>
-          <li>Menu Item 2</li>
-          <li>Menu Item 3</li>
-          <li>Menu Item 4</li>
-          <li>Menu Item 5</li>
-          <li>Menu Item 6</li>
-          <li>Menu Item 7</li>
-          <li>Menu Item 8</li>
-          <li>Menu Item 9</li>
+          <li><a href="#menuitem1">Пункт меню 1</a></li>
+          <li><a href="#menuitem2">Пункт меню 2</a></li>
+          <li><a href="#menuitem3">Пункт меню 3</a></li>
+          <li><a href="#menuitem4">Пункт меню 4</a></li>
+          <li><a href="#menuitem5">Пункт меню 5</a></li>
         </ul>
         <!-- END Nav Menu-->
       </aside>
@@ -26,10 +23,12 @@
         <!-- Content-->
         <h1>Page A</h1>
         <h3>Jade is awesome</h3>
-        <ul>
+        <ul class="advantages-list">
           <li>Позволяет разбивать шаблон на логические блоки с помощь include, что позволяет избегать длинных простыней</li>
           <li>Повторное использование блоков в схожих шаблонах (Dont Repeat Yourself)</li>
           <li>Позволяет использовать шаблоны для общих блоков(через extends и block)</li>
+          <li>Можно указать содержимое блока по умолчанию(значение затирается)</li>
+          <li>Чтобы избежать перезаписи используется append/prepand (пример - append/prepand blockName)</li>
         </ul>
         <!-- Content end-->
       </article>

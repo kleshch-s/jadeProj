@@ -1,31 +1,98 @@
-$primaryBrand: #123;
+$primaryBrand: #373a41;
+$hoverMenuColor: #80b627;
 
-@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700&subset=latin,cyrillic);
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 * {
   padding: 0;
   margin: 0;
-
+  text-decoration: none;
 }
 
 ul{
   list-style: none;
+
+  &.advantages-list {
+    list-style-type: square;
+    list-style-position: inside;
+
+    li {
+      text-indent: 1.5em;
+    }
+  }
 }
 
 body{
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  background: #C2D5E3;
 }
 
 #wrapper {
-  width: 500px;
+  background: white;
   border: 1px solid grey;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: content-box;
+  width: 980px;
   margin: 0 auto;
+
+  @media (max-width: 990px){
+    width: 760px;
+  }
 }
 
 .main-menu{
-  background: grey;
+  background: $primaryBrand;
+  box-sizing: border-box;
+  padding: 5px;
+  color: whitesmoke;
+  display: table;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+
+
   li{
-    display: inline-block;
+    display: table-cell;
+    margin: 5px;
     text-align: center;
+    cursor: pointer;
+    height: 52px;
+    vertical-align: middle;
+    border: 4px solid transparent;
+    a{
+      color: whitesmoke;
+    }
+
+    &:hover {
+      background-color: $primaryBrand * 0.9;
+      border-color: $hoverMenuColor;
+      a{
+        color: $hoverMenuColor;
+      }
+    }
+  }
+}
+
+article{
+  padding: 15px;
+}
+
+#adv{
+  background: $primaryBrand;
+  ul{
+    display: table;
+    width: 100%;
+    li{
+      display: table-cell;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2em;
+      color: $hoverMenuColor;
+      &:first-child, &:last-child{
+        width: 45%;
+      }
+
+    }
   }
 }
