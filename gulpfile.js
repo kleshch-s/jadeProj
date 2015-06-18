@@ -7,7 +7,10 @@ gulp.task('default', ['template']);
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch(['./src'], ['default'])
+    gulp.watch([
+        './src/template/*.jade',
+        './src/template/**/*.jade'
+    ], ['default'])
 });
 
 // Template
