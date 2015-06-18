@@ -1,6 +1,6 @@
 'use strict';
 var gulp = require('gulp'),
-    jade = require('jade');
+    jade = require('gulp-jade');
 
 // Default
 gulp.task('default', ['template']);
